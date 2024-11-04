@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'djoser',
     'personal',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
@@ -75,6 +76,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'djangoServer.urls'
@@ -99,6 +102,10 @@ WSGI_APPLICATION = 'djangoServer.wsgi.application'
 
 #CSRF
 CSRF_TRUSTED_ORIGINS = ['http://localhost:8080']
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Адрес вашего фронтенд-приложения
+]
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases

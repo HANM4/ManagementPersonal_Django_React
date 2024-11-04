@@ -17,6 +17,13 @@ services:
             - "./data/media:/media"
             - "./djangoServer:/app" # для прода убрать
 
+    client_react:
+        build: client/
+        restart: always
+        ports:
+            - "3000:3000"
+        depends_on:
+            - nginx
 
     postgres:
         image: postgres:15.2
