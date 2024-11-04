@@ -1,10 +1,14 @@
 # ManagementPersonal
 ## О проекте
 Веб сервис с клиент серверной архитектурой для учета действующих и уволенных сотрудников.
-![image](https://github.com/user-attachments/assets/121fd851-0f92-49d2-af21-fc99fd8b68e4)
-Авторизация на клиенте
-![image](https://github.com/user-attachments/assets/d0012609-4909-4be3-b62f-3640997c628e)
-Отображение списка всех сотрудников
+## Скриншоты проекта
+- Авторизация через клиент на react
+![image](https://github.com/user-attachments/assets/034b2c05-1029-46ad-b15d-45c04bf2eb69)
+
+- Отображение списка всех сотрудников через клиент на react
+![image](https://github.com/user-attachments/assets/10b8f54a-0da2-4522-8b72-a9e7390f6db0)
+
+
 
 ## Стек проекта
 - Серверная часть написанна на django
